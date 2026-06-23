@@ -24,7 +24,7 @@ function MySalons() {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:8080/api/salons/${id}`,
+                `https://salon-backend-vmzr.onrender.com/api/salons/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ function MySalons() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8080/api/salons/my-salons",
+                "https://salon-backend-vmzr.onrender.com/api/salons/my-salons",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

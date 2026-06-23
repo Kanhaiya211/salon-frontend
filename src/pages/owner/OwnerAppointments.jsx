@@ -20,10 +20,10 @@ function OwnerAppointments() {
 
             const token = localStorage.getItem("token");
 
-            let url = "http://localhost:8080/api/appointments/owner";
+            let url = "https://salon-backend-vmzr.onrender.com/api/appointments/owner";
 
             if (salonId) {
-                url = `http://localhost:8080/api/appointments/salon/${salonId}`;
+                url = `https://salon-backend-vmzr.onrender.com/api/appointments/salon/${salonId}`;
             }
 
             const response = await axios.get(url, {
@@ -51,7 +51,7 @@ function OwnerAppointments() {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http://localhost:8080/api/appointments/${appointmentId}/status`,
+                `https://salon-backend-vmzr.onrender.com/api/appointments/${appointmentId}/status`,
                 {
                     status: status
                 },

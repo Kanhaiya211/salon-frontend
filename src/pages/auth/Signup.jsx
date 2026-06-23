@@ -57,7 +57,7 @@ function Signup() {
             const response =
                 await axios.post(
 
-                    "http://localhost:8080/auth/send-signup-otp",
+                    "https://salon-backend-vmzr.onrender.com/auth/send-signup-otp",
 
                     formData
                 );
@@ -93,7 +93,7 @@ function Signup() {
             const response =
                 await axios.post(
 
-                    "http://localhost:8080/auth/verify-signup-otp",
+                    "https://salon-backend-vmzr.onrender.com/auth/verify-signup-otp",
 
                     {
 
@@ -158,7 +158,7 @@ function Signup() {
             const response =
                 await axios.post(
 
-                    "http://localhost:8080/auth/resend-signup-otp",
+                    "https://salon-backend-vmzr.onrender.com/auth/resend-signup-otp",
 
                     {
                         email:

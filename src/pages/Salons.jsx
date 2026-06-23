@@ -17,7 +17,7 @@ function Salons() {
 
         try {
 
-            let url = "http://localhost:8080/api/salons";
+            let url = "https://salon-backend-vmzr.onrender.com/api/salons";
 
             if (search) {
                 url += `?search=${search}`;

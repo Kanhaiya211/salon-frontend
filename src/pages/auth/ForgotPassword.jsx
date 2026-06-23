@@ -35,7 +35,7 @@ function ForgotPassword() {
             const response =
                 await axios.post(
 
-                    "http://localhost:8080/auth/forgot-password/send-otp",
+                    "https://salon-backend-vmzr.onrender.com/auth/forgot-password/send-otp",
 
                     {
                         email
@@ -73,7 +73,7 @@ function ForgotPassword() {
             const response =
                 await axios.post(
 
-                    "http://localhost:8080/auth/forgot-password/reset",
+                    "https://salon-backend-vmzr.onrender.com/auth/forgot-password/reset",
 
                     {
                         email,

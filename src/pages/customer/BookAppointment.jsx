@@ -62,7 +62,7 @@ function BookAppointment() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/salons/${salonId}`
+                `https://salon-backend-vmzr.onrender.com/api/salons/${salonId}`
             );
 
             setSalon(response.data);
@@ -78,7 +78,7 @@ function BookAppointment() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/services/salon/${salonId}`
+                `https://salon-backend-vmzr.onrender.com/api/services/salon/${salonId}`
             );
 
             setServices(response.data);
@@ -127,7 +127,7 @@ function BookAppointment() {
 
             const response = await axios.post(
 
-                "http://localhost:8080/api/appointments",
+                "https://salon-backend-vmzr.onrender.com/api/appointments",
 
                 body,
 
@@ -233,7 +233,7 @@ function BookAppointment() {
             const orderResponse =
                 await axios.post(
 
-                    "http://localhost:8080/payments/create-order",
+                    "https://salon-backend-vmzr.onrender.com/payments/create-order",
 
                     {
                         amount:
@@ -307,7 +307,7 @@ function BookAppointment() {
             const verifyResponse =
                 await axios.post(
 
-                    "http://localhost:8080/payments/verify",
+                    "https://salon-backend-vmzr.onrender.com/payments/verify",
 
                     verifyBody,
 
@@ -374,7 +374,7 @@ function BookAppointment() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8080/api/appointments/available-slots",
+                "https://salon-backend-vmzr.onrender.com/api/appointments/available-slots",
                 {
                     params: {
                         salonId: salonId,

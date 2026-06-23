@@ -34,7 +34,7 @@ function ManageServices() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                `http://localhost:8080/api/services/salon/${salonId}`,
+                `https://salon-backend-vmzr.onrender.com/api/services/salon/${salonId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -73,7 +73,7 @@ function ManageServices() {
     if (editingServiceId) {
 
       await axios.put(
-        `http://localhost:8080/api/services/${editingServiceId}`,
+        `https://salon-backend-vmzr.onrender.com/api/services/${editingServiceId}`,
         formData,
         {
           headers: {
@@ -87,7 +87,7 @@ function ManageServices() {
     } else {
 
       await axios.post(
-        `http://localhost:8080/api/services/salon/${salonId}`,
+        `https://salon-backend-vmzr.onrender.com/api/services/salon/${salonId}`,
         formData,
         {
           headers: {
@@ -128,7 +128,7 @@ function ManageServices() {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:8080/api/services/${serviceId}`,
+                `https://salon-backend-vmzr.onrender.com/api/services/${serviceId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

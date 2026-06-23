@@ -30,7 +30,7 @@ function EditSalon() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `http://localhost:8080/api/salons/${id}`,
+        `https://salon-backend-vmzr.onrender.com/api/salons/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -63,7 +63,7 @@ function EditSalon() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:8080/api/salons/${id}`,
+        `https://salon-backend-vmzr.onrender.com/api/salons/${id}`,
         formData,
         {
           headers: {

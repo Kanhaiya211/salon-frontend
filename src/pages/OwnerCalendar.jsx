@@ -27,7 +27,7 @@ function OwnerCalendar() {
             const response =
                 await axios.get(
 
-                    "http://localhost:8080/api/appointments/owner",
+                    "https://salon-backend-vmzr.onrender.com/api/appointments/owner",
 
                     {
                         headers: {
@@ -88,7 +88,7 @@ function OwnerCalendar() {
 
             await axios.post(
 
-                `http://localhost:8080/api/appointments/closed-date` +
+                `https://salon-backend-vmzr.onrender.com/api/appointments/closed-date` +
 
                 `?salonId=7&date=${formatDate(selectedDate)}`,
 

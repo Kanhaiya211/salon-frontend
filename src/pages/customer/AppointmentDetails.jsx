@@ -25,7 +25,7 @@ function AppointmentDetails() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                `http://localhost:8080/api/appointments/${appointmentId}`,
+                `https://salon-backend-vmzr.onrender.com/api/appointments/${appointmentId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

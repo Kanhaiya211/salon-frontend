@@ -21,7 +21,7 @@ function OwnerAnalytics() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8080/api/appointments/dashboard",
+                "https://salon-backend-vmzr.onrender.com/api/appointments/dashboard",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -47,7 +47,7 @@ function OwnerAnalytics() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-            "http://localhost:8080/api/appointments/monthly-revenue",
+            "https://salon-backend-vmzr.onrender.com/api/appointments/monthly-revenue",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

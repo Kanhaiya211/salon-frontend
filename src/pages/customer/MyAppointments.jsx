@@ -25,7 +25,7 @@ function MyAppointments() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8080/api/appointments/my",
+                "https://salon-backend-vmzr.onrender.com/api/appointments/my",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -199,7 +199,7 @@ function MyAppointments() {
                                             <div className="mt-8 flex gap-4">
 
                                                 <a
-                                                    href={`http://localhost:8080/invoice/${appointment.id}`}
+                                                    href={`https://salon-backend-vmzr.onrender.com/invoice/${appointment.id}`}
                                                     target="_blank"
                                                     rel="noreferrer"
                                                     onClick={(e) => e.stopPropagation()}

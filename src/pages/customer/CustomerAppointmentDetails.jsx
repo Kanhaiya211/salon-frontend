@@ -37,7 +37,7 @@ function CustomerAppointmentDetails() {
             const response =
                 await axios.get(
 
-                    `http://localhost:8080/api/appointments/${appointmentId}`,
+                    `https://salon-backend-vmzr.onrender.com/api/appointments/${appointmentId}`,
 
                     {
                         headers: {
@@ -83,7 +83,7 @@ function CustomerAppointmentDetails() {
                 const refundResponse =
                     await axios.post(
 
-                        "http://localhost:8080/payments/refund",
+                        "https://salon-backend-vmzr.onrender.com/payments/refund",
 
                         {
                             appointmentId:
@@ -106,7 +106,7 @@ function CustomerAppointmentDetails() {
 
                 await axios.put(
 
-                    `http://localhost:8080/api/appointments/${appointmentId}/cancel`,
+                    `https://salon-backend-vmzr.onrender.com/api/appointments/${appointmentId}/cancel`,
 
                     {},
 

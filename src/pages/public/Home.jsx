@@ -14,7 +14,7 @@ function Home() {
 
   const fetchSalons = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/salons");
+      const response = await axios.get("https://salon-backend-vmzr.onrender.com/api/salons");
       setSalons(response.data.slice(0, 6));
     } catch (error) {
       console.error(error);

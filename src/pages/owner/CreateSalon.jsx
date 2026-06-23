@@ -34,7 +34,7 @@ closingTime
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:8080/api/salons",
+        "https://salon-backend-vmzr.onrender.com/api/salons",
         formData,
         {
           headers: {

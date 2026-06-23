@@ -28,7 +28,7 @@ function SalonDetails() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/salons/${id}`
+                `https://salon-backend-vmzr.onrender.com/api/salons/${id}`
             );
 
             setSalon(response.data);
@@ -44,7 +44,7 @@ function SalonDetails() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/services/salon/${id}`
+                `https://salon-backend-vmzr.onrender.com/api/services/salon/${id}`
             );
 
             setServices(response.data);
