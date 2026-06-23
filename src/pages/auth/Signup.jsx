@@ -57,7 +57,7 @@ function Signup() {
             const response =
                 await axios.post(
 
-                    "https://salon-backend-vmzr.onrender.com/auth/send-signup-otp",
+                    "https://salon-backend-vmzr.onrender.com/auth/signup",
 
                     formData
                 );
